@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/rps-styles.css">
+  <title>ROCK PAPER SCISSORS</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div id="canvas-container" class="game-canvas"><canvas id="canvas1"></canvas></div>
+      <div class="text-container">
+        <p class="results" id="results">Cast your hands</p>
+        <p class="score" id="score">Scores go Here</p>
+      </div>
+      <div class="player-buttons" id="playerButtons">
+        <button id="rock" class="rock-button" onclick="
+        playerMove='rock'
+        pickComputerMove();
+        decideWinner(playerMove);
+        castRock();
+        ">
+        <img src="img/rock-fist.png" class="rock-img"></button>
+        <button id="paper" class="paper-button " onclick="
+        playerMove='paper'
+        pickComputerMove()
+        decideWinner(playerMove)
+        castPaper()
+        ">
+        <img src="img/paper-wind.png" class="paper-img"></button>
+        <button id="scissors" class="scissors-button" onclick="
+        playerMove='scissors'
+        pickComputerMove()
+        decideWinner(playerMove)
+        castScissors()
+        ">
+        <img src="img/scissors-fire.png" class="scissors-img"></button>
+      </div>
+      <div class="other-buttons">
+        <button class="reset-score" id="reset">Reset</button>
+        <button class="save-score" id="save">Save</button>
+        <button class="auto-play" id="autoPlay">Autoplay</button>
+    </div>
+  </div>
+  <script src="scripts/rpsScript.js">
+  </script>
+</body>
+</html>

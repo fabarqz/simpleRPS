@@ -1,0 +1,60 @@
+/*
+Text: #1C1D11
+Background: #F1F2E9
+Primary: #4B4D2E
+Secondary: #dfe0cc
+Accent: #898c54
+Buttons: #6a66a3
+*/
+
+
+body{
+  padding-top:100px;
+  background-color: #F1F2E9;
+}
+
+#canvas1{
+  width:800px;
+  height:600px;
+  background-color:#b9aa87;
+}
+
+.wrapper{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color:#F1F2E9;
+  max-width:100%%;
+}
+
+.game-canvas{
+  padding:10px;
+  max-height:650px;
+  border:solid 1px white;
+}
+.rock-button,.paper-button,.scissors-button{
+  background-color:#6a66a3;
+  margin:2px;
+  border-radius:100%;
+  border-color:#dfe0cc;
+  border-style: solid 1px;
+}
+
+.rock-img,.paper-img,.scissors-img{
+  max-width:100px;
+  max-height:100px;
+}
+
+.text-container{
+  border:solid 1px white;
+}
+
+.player-buttons{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:solid 1px white;
+}
+.results,.score{
+  text-align: center;
+}
