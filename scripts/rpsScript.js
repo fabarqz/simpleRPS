@@ -259,9 +259,26 @@ function displayResults(){
   } 
 }
 
+/*Buttons*/
 
+function resetGame(){
+  score.wins=0;
+  score.losses=0;
+  score.ties=0;
+  score.reset=true;
+  
+  playerMove='';
+  computerMove='';
+  result='';
 
+  ctx.clearRect(0,300,spriteWidth,spriteHeight);
+  ctx.clearRect(600,300,spriteWidth,spriteHeight);
 
+  displayResults();
+
+}
+
+document.getElementById("reset").addEventListener("click",resetGame);
 
 
 /*
